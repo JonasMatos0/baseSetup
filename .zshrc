@@ -197,6 +197,7 @@ plugins=(
 	zsh-syntax-highlighting
 	zsh-autosuggestions
 )
+ZSH_HIGHLIGHT_MAXLENGTH=100
 source $ZSH/oh-my-zsh.sh
 # User configuration
 # export MANPATH="/usr/local/man:$MANPATH"
@@ -254,5 +255,13 @@ chrome(){
 slack(){
   nohup slack &
 }
-
+postman(){
+  nohup postman &
+}
+#Fuzzy finder - Enables multi search history and files
+#>>https://github.com/junegunn/fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+export PATH=$PATH:/home/jonas/seaecom/ecom-dev-setup/utils
+export PATH=$PATH:/home/jonas/utils
+export GOPATH=$HOME/go
